@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && bunx vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "bunx vite preview"
   },
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.19.4",
