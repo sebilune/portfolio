@@ -24,7 +24,7 @@ export const BoxReveal = ({
   const [isRevealed, setIsRevealed] = useState(false);
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout | null = null;
+    let timeoutId: ReturnType<typeof setTimeout> | null = null;
     if (isInView) {
       slideControls.start("hidden");
       timeoutId = setTimeout(() => {

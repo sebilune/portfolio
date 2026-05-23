@@ -6,11 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    react({
-      babel: {
-        plugins: [["babel-plugin-react-compiler"]],
-      },
-    }),
+    react(),
     tailwindcss(),
   ],
   resolve: {
@@ -22,9 +18,13 @@ export default defineConfig({
     sourcemap: false,
     rollupOptions: {
       output: {
-        manualChunks: {
-          dotlottie: ["@lottiefiles/dotlottie-react"],
-          react: ["react", "react-dom"],
+        manualChunks: (id) => {
+          if (id.includes("@lottiefiles/dotlottie-react")) {
+            return "dotlottie";
+          }
+          if (id.includes("react")) {
+            return "react";
+          }
         },
       },
     },
