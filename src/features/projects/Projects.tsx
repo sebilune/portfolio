@@ -26,15 +26,6 @@ export function Projects() {
       delay: 0.2,
     },
     {
-      name: "Discord Movie Torrent Bot",
-      desc: "Dockerized Discord TypeScript bot to search, queue, and manage movie torrents with slash commands and WebUI.",
-      link: "https://github.com/sebilune/dc-torrent",
-      code: "https://github.com/sebilune/dc-torrent",
-      color: "cyan",
-      boxColor: "#53eafd",
-      delay: 0.3,
-    },
-    {
       name: "Serverless Trending API",
       desc: "Lightweight serverless REST API that scrapes, caches, and returns trending videos per query.",
       link: "https://hopp.sh/r/y69mfyXkJGjB",
