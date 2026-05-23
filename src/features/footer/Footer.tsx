@@ -13,7 +13,7 @@ export function Footer() {
           </p>
           <ArrowUpRight size={16} className="ml-0.5" />
         </a>
-        <p>2025</p>
+        <p>2026</p>
       </div>
     </footer>
   );
