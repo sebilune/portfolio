@@ -28,7 +28,7 @@ export function FelixLottieSticky() {
     <>
       <div
         className={cn(
-          'right-0 bottom-0 pointer-events-none select-none w-[500px] h-[500px] transition-all duration-300',
+          'right-0 bottom-0 pointer-events-none select-none w-125 h-125 lg:w-200 lg:h-200 transition-all duration-300',
           stuck ? 'absolute' : 'fixed z-20',
         )}
       >
