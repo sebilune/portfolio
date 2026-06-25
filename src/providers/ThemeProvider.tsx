@@ -23,6 +23,13 @@ export function ThemeProvider({
 
     root.classList.remove('light', 'dark')
 
+    const isDark =
+      theme === 'dark' ||
+      (theme === 'system' &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+
+    root.style.colorScheme = isDark ? 'dark' : 'light'
+
     if (theme === 'system') {
       const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
         .matches

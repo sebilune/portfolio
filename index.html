@@ -5,6 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="/svg/favicon/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sebilune</title>
+    <script>
+      ;(function () {
+        try {
+          let storageKey = 'vite-ui-theme'
+          let theme = localStorage.getItem(storageKey) || 'system'
+          let isDark =
+            theme === 'dark' ||
+            (theme === 'system' &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches)
+          let root = document.documentElement
+          if (isDark) {
+            root.classList.add('dark')
+            root.style.colorScheme = 'dark'
+          } else {
+            root.classList.remove('dark')
+            root.style.colorScheme = 'light'
+          }
+        } catch (e) {}
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
