@@ -41,7 +41,7 @@ export function FelixLottieSticky() {
       </div>
       <div
         ref={sentinelRef}
-        className='absolute bottom-[52px] w-full h-[1px] pointer-events-none'
+        className='absolute bottom-13 w-full h-13 pointer-events-none'
       />
     </>
   )
