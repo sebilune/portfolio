@@ -16,9 +16,6 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          if (id.includes('@lottiefiles/dotlottie-react')) {
-            return 'dotlottie'
-          }
           if (id.includes('react')) {
             return 'react'
           }

@@ -21,7 +21,6 @@ My modern, animated, and minimal personal portfolio.
 - **[Tailwind CSS:](https://tailwindcss.com/)** Utility CSS framework.
 - **[Shadcn:](https://ui.shadcn.com/)** React UI components via [Radix UI](https://www.radix-ui.com/).
 - **[MagicUI:](https://magicui.design/)** Animation and UI components library for React.
-- **[DotLottie:](https://www.npmjs.com/package/@lottiefiles/dotlottie-react)** A React library for rendering [Lottie](https://lottiefiles.com/) and dotLottie animations.
 
 ## License
 

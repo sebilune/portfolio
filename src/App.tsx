@@ -1,8 +1,6 @@
 import { BlurFade } from '@/components/magicui/blur-fade'
 import { DotPattern } from '@/components/magicui/dot-pattern'
 
-import { FelixLottieSticky } from '@/components/ui/FelixLottieSticky'
-
 import { Header } from '@/components/layout/Header'
 import { Intro } from '@/components/layout/Intro'
 import { Skills } from '@/components/layout/Skills'
@@ -54,7 +52,6 @@ function App() {
             </BlurFade>
           </div>
         </article>
-        <FelixLottieSticky />
       </main>
       <Footer />
     </div>
