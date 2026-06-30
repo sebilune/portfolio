@@ -23,31 +23,31 @@ function App() {
             <BlurFade delay={0} direction='up' blur='3px'>
               <Header className='mb-6' />
             </BlurFade>
-            <BlurFade delay={0.15} direction='up' blur='3px'>
+            <BlurFade delay={0.1} direction='up' blur='3px'>
               <Intro />
             </BlurFade>
           </div>
           <div className='flex flex-col items-center w-full gap-8 mb-12 md:flex-row md:items-center'>
-            <BlurFade delay={0.3} direction='up' blur='3px'>
+            <BlurFade delay={0.2} direction='up' blur='3px'>
               <Skills />
             </BlurFade>
-            <BlurFade delay={0.45} direction='up' blur='3px'>
+            <BlurFade delay={0.3} direction='up' blur='3px'>
               <Projects />
             </BlurFade>
           </div>
           <div className='mb-12'>
-            <BlurFade delay={0.6} direction='up' blur='3px'>
+            <BlurFade delay={0.4} direction='up' blur='3px'>
               <h2 className='mb-6 text-xl font-semibold'>Now</h2>
             </BlurFade>
-            <BlurFade delay={0.75} direction='up' blur='3px'>
+            <BlurFade delay={0.5} direction='up' blur='3px'>
               <Now />
             </BlurFade>
           </div>
           <div>
-            <BlurFade delay={0.9} direction='up' blur='3px'>
+            <BlurFade delay={0.6} direction='up' blur='3px'>
               <h2 className='mb-6 text-xl font-semibold'>Connect</h2>
             </BlurFade>
-            <BlurFade delay={1.05} direction='up' blur='3px'>
+            <BlurFade delay={0.7} direction='up' blur='3px'>
               <Contact />
             </BlurFade>
           </div>
