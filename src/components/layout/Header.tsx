@@ -14,7 +14,7 @@ export function Header({ className }: HeaderProps) {
         <h1 className='text-xl font-semibold'>
           <BoxReveal boxColor='#fb64b6' delay={0.025}>
             <Link color='pink' link='https://github.com/sebilune'>
-              sebilune
+              Sebastian
             </Link>
           </BoxReveal>
         </h1>

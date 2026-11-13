@@ -5,8 +5,8 @@ export function Contact() {
   return (
     <div className='font-mono'>
       <BoxReveal boxColor='#c27aff'>
-        <Link color='purple' link='mailto:sebilune.business@proton.me'>
-          sebilune.business@proton.me
+        <Link color='purple' link='mailto:sebilune@proton.me'>
+          sebilune@proton.me
         </Link>
       </BoxReveal>
     </div>
