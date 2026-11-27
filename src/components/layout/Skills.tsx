@@ -1,4 +1,8 @@
 import { OrbitingCircles } from '@/components/magicui/orbiting-circles'
+import {
+  OrbitingCirclesWebGL,
+  type OrbitingRing,
+} from '@/components/magicui/orbiting-circles-webgl'
 
 const logos = [
   { name: 'linux', scale: 1.2 },
@@ -27,32 +31,63 @@ export function Skills() {
   const outer = logos.slice(0, outerCount)
   const inner = logos.slice(outerCount)
 
+  const rings: OrbitingRing[] = [
+    {
+      items: outer.map(({ name, scale }) => ({
+        src: `/svg/logos/${name}.svg`,
+        scale,
+      })),
+      iconSize: 34,
+      radius: 120,
+      speed: 0.5,
+    },
+    {
+      items: inner.map(({ name, scale }) => ({
+        src: `/svg/logos/${name}.svg`,
+        scale,
+      })),
+      iconSize: 34,
+      radius: 60,
+      reverse: true,
+      speed: 0.4,
+    },
+  ]
+
+  const cssFallback = (
+    <div className='relative flex h-75 w-75 flex-col items-center justify-center overflow-hidden'>
+      <OrbitingCircles iconSize={34} radius={120} speed={0.5}>
+        {outer.map(({ name, scale = 1.0 }) => (
+          <img
+            key={name}
+            src={`/svg/logos/${name}.svg`}
+            alt={`${name} logo`}
+            className='w-full h-full object-contain'
+            style={{ transform: `scale(${scale})` }}
+          />
+        ))}
+      </OrbitingCircles>
+      <OrbitingCircles iconSize={34} radius={60} reverse speed={0.4}>
+        {inner.map(({ name, scale = 1.0 }) => (
+          <img
+            key={name}
+            src={`/svg/logos/${name}.svg`}
+            alt={`${name} logo`}
+            className='w-full h-full object-contain'
+            style={{ transform: `scale(${scale})` }}
+          />
+        ))}
+      </OrbitingCircles>
+    </div>
+  )
+
   return (
     <div>
-      <div className='relative flex h-75 w-75 flex-col items-center justify-center overflow-hidden'>
-        <OrbitingCircles iconSize={34} radius={120} speed={0.5}>
-          {outer.map(({ name, scale = 1.0 }) => (
-            <img
-              key={name}
-              src={`/svg/logos/${name}.svg`}
-              alt={`${name} logo`}
-              className='w-full h-full object-contain'
-              style={{ transform: `scale(${scale})` }}
-            />
-          ))}
-        </OrbitingCircles>
-        <OrbitingCircles iconSize={34} radius={60} reverse speed={0.4}>
-          {inner.map(({ name, scale = 1.0 }) => (
-            <img
-              key={name}
-              src={`/svg/logos/${name}.svg`}
-              alt={`${name} logo`}
-              className='w-full h-full object-contain'
-              style={{ transform: `scale(${scale})` }}
-            />
-          ))}
-        </OrbitingCircles>
-      </div>
+      <OrbitingCirclesWebGL
+        rings={rings}
+        size={300}
+        className='relative flex h-75 w-75 flex-col items-center justify-center overflow-hidden'
+        fallback={cssFallback}
+      />
     </div>
   )
 }
