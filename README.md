@@ -1,9 +1,9 @@
 <p align="left">
-  <img src="https://img.shields.io/github/license/sebilune/chessin?style=flat-square" alt="License" />
-  <img src="https://img.shields.io/github/repo-size/sebilune/chessin?style=flat-square" alt="Repo size" />
-  <img src="https://img.shields.io/github/last-commit/sebilune/chessin?style=flat-square" alt="Last commit" />
-  <img src="https://img.shields.io/github/languages/top/sebilune/chessin?style=flat-square" alt="Top language" />
-  <img src="https://img.shields.io/github/languages/count/sebilune/chessin?style=flat-square" alt="Language count" />
+  <img src="https://img.shields.io/github/license/sebilune/portfolio?style=flat-square" alt="License" />
+  <img src="https://img.shields.io/github/repo-size/sebilune/portfolio?style=flat-square" alt="Repo size" />
+  <img src="https://img.shields.io/github/last-commit/sebilune/portfolio?style=flat-square" alt="Last commit" />
+  <img src="https://img.shields.io/github/languages/top/sebilune/portfolio?style=flat-square" alt="Top language" />
+  <img src="https://img.shields.io/github/languages/count/sebilune/portfolio?style=flat-square" alt="Language count" />
 </p>
 
 # 📰 Portfolio
