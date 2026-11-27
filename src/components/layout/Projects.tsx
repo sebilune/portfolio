@@ -14,19 +14,19 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: 'Todo',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: 'https://github.com/sebilune',
-    code: 'https://github.com/sebilune',
+    name: 'Chessin',
+    desc: 'A minimalist 5x5 solo chess capture puzzle game with 64 progressive levels.',
+    link: 'https://chessin.pages.dev',
+    code: 'https://github.com/sebilune/chessin',
     color: 'lime',
     boxColor: '#9ae600',
     delay: 0.2,
   },
   {
-    name: 'Todo',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    link: 'https://github.com/sebilune',
-    code: 'https://github.com/sebilune',
+    name: 'Noisium',
+    desc: 'An ambient sound mixer designed to help you focus, relax, or block out distracting noise.',
+    link: 'https://noisium.pages.dev',
+    code: 'https://github.com/sebilune/noisium',
     color: 'pink',
     boxColor: '#fb64b6',
     delay: 0.4,
